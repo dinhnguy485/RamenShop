@@ -41,6 +41,8 @@ namespace RamenShop
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //when total button is pressed, convert the input to integers, calculate the subtotal, tax and total price.
+            //Catch error when user dont enter a number or enter a text message
             try
             {
                 numRamen = Convert.ToInt16(classicInput.Text);
@@ -78,6 +80,8 @@ namespace RamenShop
 
         private void changeButton_Click(object sender, EventArgs e)
         {
+            // when calculate change button is pressed, convert the tendered input to double, calculate the change
+            // if the tendered money is lower than the total = error
             try
             {
                 double changeInput = Convert.ToInt16(moneyPayed.Text);
@@ -100,14 +104,11 @@ namespace RamenShop
             
         }
 
-        private void shopLabel_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void receiptButton_Click(object sender, EventArgs e)
 
-
+            // when receipt button click, print receipt.
         {
             try
             {
@@ -209,6 +210,7 @@ namespace RamenShop
 
         private void neworderButton_Click(object sender, EventArgs e)
         {
+            //when new order button is clicked reset the input to 0, reset all the label to " " (empty).
             numRamen = 0 ;
             numBanhmi = 0 ;
             numBoba = 0;
@@ -229,9 +231,6 @@ namespace RamenShop
 
         }
 
-        private void RamenShop_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

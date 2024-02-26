@@ -117,7 +117,6 @@
             this.shopLabel.TabIndex = 7;
             this.shopLabel.Text = "🥡🍛ASIAN CUISINE 🍲🍘";
             this.shopLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.shopLabel.Click += new System.EventHandler(this.shopLabel_Click);
             // 
             // totalButton
             // 
@@ -329,7 +328,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RamenShop";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.RamenShop_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
